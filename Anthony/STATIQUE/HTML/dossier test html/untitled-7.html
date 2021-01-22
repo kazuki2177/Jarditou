@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les Formulaires HTML</h1>
+    <h5><em>je fais des test</em></h5>
+    <div style="margin:20px; margin-top:5px"><div class="quotetitle"><b>Spoiler:</b> <input type="button" value="Afficher" style="width:45px;font-size:10px;margin:0px;padding:0px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';        this.innerText = ''; this.value = 'Cacher'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Afficher'; }" /></div><div class="quotecontent"><div style="display: none;">
+    <!--au dessus c'est la balise pour faire des spoiler  -->
+        <input type="text" required="nom"> 
+        <input type="text" required="prenom"> 
+        <input type="submit" required="Envoyer">
+        <p><label for="nom">Nom:</label><input type="text" name="nom" id="nom" size="50" maxlength="50" value="Dave LOPER"></p>
+
+        <p><input type="checkbox" name="couleur1" value="Bleu" checked> Bleu 
+<input type="checkbox" name="couleur2" value="Rouge"> Rouge 
+<input type="checkbox" name="couleur3" value="Vert" > Vert</p>
+<p><input type="radio" name="couleur" value="Bleu"> Bleu 
+    <input type="radio" name="couleur" value="Rouge"> Rouge 
+    <input type="radio" name="couleur" value="Vert" checked> Vert</p>
+    <p><select name="couleur"> 
+        <option>Bleu</option>
+        <option>Rouge</option>
+        <option>Vert</option>
+    </select>   </p>
+    <p><label for="couleur">Choisissez votre couleur</label>
+        <select id="couleur"> 
+            <option value="" selected>-</option>
+            <option value="Bleu">Bleu</option>
+            <option value="Rouge">Rouge</option>
+            <option value="Vert">Vert</option>
+        </select></p>
+    <p><form action="destination.php" method="post" enctype="multipart/form-data"> 
+        <input type="file" name="fichier"> 
+        </form></p>
+<p><label for="nom">Nom :</label><input type="text" name="nom" id="nom"> </p>
+
+
+<fieldset>
+    <legend>Coordonnées</legend>
+    <label for="nom">Nom:</label><input type="text" name="nom" id="?"><br>
+    <label for="?">Email:</label><input type="email" name="email"><br>
+    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+   </fieldset>
+
+<hr>
+</div></div></div>
+<!-- fin balise spoiler -->
+
+
+
+
+
+    <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
+   
+<h2>Exercice</h2>
+
+<div style="width: 500px; padding-top:10px; padding-bottom:10px;border: 2px solid #383838; text-align: center;background: #fdfdfd;"> *Ces zones sont obligatoires</div>
+<!-- la ligne div sert pour creer un cadre sur la page -->
+<fieldset>
+    <!-- Le fieldset set a encadrer le formulaire -->
+    <legend>Coordonnées</legend>
+    <label for="nom">Votre nom*: </label><input type="text" name="nom" id="?" required title="Entrez votre nom"><br>
+    <label for="prenom">Votre prénom*: </label><input type="text" name="prenom" required title="Entrez votre prénom"><br>
+   <!-- la zone avec le texte en blanc sert a inserer son texte -->
+
+    <p><label for="sexe">Sexe*: </label><input type="radio" name="sexe" value="Féminin"> Féminin
+        <input type="radio" name="sexe" value="Masculin"> Masculin 
+</p>
+        <!-- cela correspont au bulles a cocher -->
+        <p><label for="date">Date de naissance:</label><input type="date" name="ddn" id="date"></p>
+        <p>    <label for="code postal">Code postal*: </label><input type="text" required name="code postal" id="?"><br>
+            <label for="adresse">Adresse: </label><input type="text" name="adresse"><br>
+            <label for="ville">Ville: </label><input type="text" name="ville" id="?"><br>
+            <label for="email">Email* : </label><input type="text" required name="email"placeholder="dave.loper@afpa.fr"><br>
+        </p>
+</fieldset>
+<p></p>
+<fieldset>
+    <legend>Votre demande</legend>
+    <label for="Sujet">Sujet* : </label>
+        <select required id="Sujet"> 
+            <option value="" selected>Veuillez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select>
+    <p><label for="?">Votre question* : </label><input type="question" required name="question"><br></p>
+   </fieldset>
+   <p>  <p>
+    <input type="checkbox"name="validation traitement informatique" required value="check"> * J'accepte le traitement informatique de ce formulaire</p>
+    <input type="submit" value="Envoyer">      <input type="reset" value="Annuler">
+</form>
+
+<p><a href="file:///U:/80010-78-12/Anthony/STATIQUE/HTML/dossier%20test%20html/jarditou_css/index.html"title=page><img src="https://www.icone-png.com/png/51/51005.png"width="50px";></a></p>
+<p><strong>clique ici pour le site jarditou</strong></p>
+
+</body>
+</html>

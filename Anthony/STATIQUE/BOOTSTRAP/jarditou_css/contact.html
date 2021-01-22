@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- link sert a integrer le css depuis le fichier style -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link servant a integrer bootstrap via url -->
+</head>
+<!--body ----------------------------------------------------------------------------------------------- -->
+<body class="container">
+    
+    <!-- header ---------------------------------------------------------------------------------------- -->
+    <header>
+  
+        <div class="row">
+          <div class="col-2">
+            <img src="../jarditou_css/src/img/jarditou_logo.jpg" height="70px"></div>
+            <!-- lien logo jarditou -->
+          <div class="col-10">
+            <h2 class="text-right bottom: ">Tout le jardin</h2></div>  
+          </div>    
+          
+    </header>
+    
+      <!-- Navbar -------------------------------------------------------------------------------------------- -->
+     
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button">
+          <div class="navbar-toggler-icon"></div>
+        </button>
+              <a class="navbar-brand" href="#">Jarditou.com</a>
+        <div class="collapse navbar-collapse">
+    
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </nav>
+      <!--  liste qui redirige vers les pages -->
+    
+      <!-- Image--------------------------------------------------------------------------------------- -->
+      <div class="row">
+            <div class="col-12"> 
+    <img src="src\img\promotion.jpg" class="img-fluid max-weight: 100%; height:auto" alt="responsive image">
+    </div>
+    </div>
+    <br>
+    <!-- lien vers banniere promotion -->
+    <nav class="colonnetableau">
+    </nav>
+    </nav>
+    
+<!-- Formulaire------------------------------------------------------------------------------------- -->
+
+<p>*Ces zones sont obligatoires</p> 
+<h2>Vos Coordonnées</h2>
+
+<form>
+    <div class="form-group">
+      <label>Nom*</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Veuillez saisir votre nom">
+    </div>
+    <div class="form-group">
+      <label>Prénom*</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Veuillez saisir votre prénom">
+    </div>
+</form>
+    <label for="sexe">Sexe*: </label> 
+<br>
+    <input type="radio" name="sexe" value="Féminin"> Féminin
+    <input type="radio" name="sexe" value="Masculin"> Masculin 
+    <input type="radio" name="sexe" value="Neutre"> Neutre 
+
+<p>
+    <label for="date">Date de naissance*</label></p>
+    <input type="date" class="form-control" name="date" id="date" placeholder="jj/mm/aaaa" required>     
+</div>
+
+
+
+<div class="form-group">
+    <label for="codepostal">Code postal*</label>
+    <input type="text" class="form-control" name="codepostal" id="codepostal" required>     
+</div>
+
+
+
+<div class="form-group">
+    <label for="adresse">Adresse</label>
+    <input type="text" class="form-control" name="adresse" id="adresse">     
+</div>
+
+
+
+<div class="form-group">
+    <label for="ville">Ville</label>
+    <input type="text" class="form-control" name="ville" id="ville">     
+</div>
+
+
+
+<div class="form-group">
+    <label for="mail">Email*</label>
+    <input type="email" class="form-control" name="mail" id="mail" placeholder="dave.loper@afpa.fr" required>     
+</div>
+
+
+<h2>Vos coordonnées</h2>
+
+
+<div class="form-group">
+    <label for="inputState">Sujet*</label>
+    <select id="inputState" class="form-control" required>
+    <option value="">Veuilliez sélectionnez un sujet</option>
+    <option value="mescommandes">Mes commandes</option>
+    <option value="questionsurunproduit">Question sur un produit</option>
+    <option value="reclamation">Réclamation</option>
+    <option value="autres">Autres</option>
+    </select>
+</div>
+
+
+<div class="form-group">
+<label for="exampleFormControlTextarea1">Votre question*</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" required rows="2"></textarea>
+</div>
+
+
+
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+    <label class="form-check-label" for="defaultCheck1">
+      J'accepte le traitement informatique de ce formulaire
+    </label>
+</div>
+<br>
+
+
+<button type="submit" class="btn btn-dark">Envoyer</button>
+<button type="reset" class="btn btn-dark">Annuler</button>
+</form><br>
+</div>
+ </form>
+    <br>
+
+
+    <footer class="navbar navbar-expand-lg navbar-light bg-dark">
+        <ul class="list-inline" type= disc> 
+            <li class="list-inline-item"><a href="index.html">Mention légales</a></li> 
+            <li class="list-inline-item"><a href="index.html">Horaires</a></li>
+            <li class="list-inline-item"><a href="index.html">Plan du site</a></li>
+            </ul>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+</body>
+</html>

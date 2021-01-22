@@ -1,0 +1,95 @@
+.block {
+background-color: black;
+text-decoration: underline;
+margin-bottom: -10px;
+}
+ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 45px;
+}
+a{
+    color: white;}
+li{
+margin-right: 5px;
+}
+footer{
+    background-color: black;
+text-decoration: underline;
+margin-bottom: -10px;
+}
+.Promo{
+    width: 100% ;
+    height: auto;   
+    /* banniere promo */
+}
+.colonneindex {
+    /* colonne dimension index */
+float: right;
+width: 320px;
+margin-left: 5px;
+height: 430px; 
+padding-bottom: 50px;
+background-color: rgb(184, 184, 184);
+}
+
+.colonneformulaire {
+    /* colonne dimension formulaire */
+float: right;
+width: 320px;
+margin-left: 5px;
+height: 542px; 
+padding-bottom: 50px;
+background-color: rgb(184, 184, 184);
+}
+
+.colonnetableau {
+    /* colonne dimension tableau */
+float: right;
+width: 320px;
+margin-left: 5px;
+height: 815px; 
+padding-bottom: 50px;
+background-color: rgb(184, 184, 184);
+}
+table,tr,th{border:1px solid rgb(0, 0, 0);}
+table,tr,th,td{border:1px solid rgb(0, 0, 0);}
+
+
+#Toutlejardin {
+    display: flex;
+    justify-content:center;
+    position: relative;
+    font-size: 14pt;
+}
+.box {
+    bottom: 6px;
+}
+.Logo {
+    height: 50px;
+    position: relative;
+    top: 30px;
+}
+
+@media screen and (max-width: 768px)
+/* rendre la page adapté a plusieurs support */
+{.colonneformulaire 
+    {display:none;} 
+.colonneindex
+{display: none;}
+.colonnetableau
+{display: none;}
+body{
+    font-size: 1.3rem;}
+.Menu { 
+    display: flex;
+    flex-direction:column;
+    }
+.block{
+	margin: 10px !important;
+	background-size: contain;
+}
+}
+

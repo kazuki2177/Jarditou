@@ -1,0 +1,28 @@
+.block {
+background-color: black;
+text-decoration: underline;
+}
+ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    padding: 15px;}
+a{
+    color: white;}
+li{
+margin-right: 5px;}
+footer{
+    background-color: black;
+text-decoration: underline;
+}
+.Promo{
+    width: 1245px;
+    height: 200px;   
+}
+.colonnedroite {
+float: right;
+width: 320px;
+height: 430px; 
+padding-bottom: 50px;
+background-color: rgb(184, 184, 184);
+}
